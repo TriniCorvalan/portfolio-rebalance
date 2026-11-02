@@ -80,6 +80,14 @@ En un rebalanceo eso puede distorsionar valores de mercado, hacer que los pesos 
 
 **Alternativa habitual:** enteros en centavos (`260000` = $2600.00). También evita `Float`. Aquí preferimos `BigDecimal` porque el dominio mezcla precios, fracciones de acción y pesos, y el código queda más legible.
 
+## Ejemplos
+
+Para ver varios escenarios de rebalanceo en consola:
+
+```bash
+ruby examples/rebalance_demo.rb
+```
+
 ## Pruebas
 
 ```bash
